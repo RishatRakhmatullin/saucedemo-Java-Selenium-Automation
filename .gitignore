@@ -1,17 +1,62 @@
+# Игнорирование скомпилированных файлов Java
+*.class
+
+# Игнорирование файлов журналов (логов)
+*.log
+
+# Игнорирование временных файлов редакторов и IDE
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Системные файлы (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# Сборочные и артефактные файлы Maven
+
+# Папка с результатами сборки Maven
 target/
+
+# Резервные файлы и бэкапы Maven
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
 pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
+
+# Файлы с настройками Maven Wrapper
 .mvn/timing.properties
-# https://maven.apache.org/wrapper/#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
 
-# Eclipse m2e generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
+# Прочие временные файлы
+*.tmp
+*.bak
+*.swp
+*~
+
+# Пакетные файлы (JAR, WAR, EAR и др.) обычно не нужны, если находятся в target/
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Файлы для SonarQube анализа
+.sonar/
+
+# Другие временные или исходные файлы, которые не должны попадать в репозиторий
+*.orig
+
